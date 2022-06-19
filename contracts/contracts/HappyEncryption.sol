@@ -35,7 +35,7 @@ contract HappyEncryption is ERC1155, Ownable, ERC1155Burnable, ERC1155Supply {
     uint256 public constant defaultMaxSupply = 1000;
     mapping(uint256 => uint256) public maxSupplies;
 
-    mapping (uint256 => string) public tokenURIs;
+    mapping(uint256 => string) public tokenURIs;
 
     address public royaltyReceiver;
     uint256 public constant secondarySaleRoyalty = 10_00000; // 10.0%
