@@ -1,0 +1,22 @@
+{
+  "name": "Not ACID, not BASE, but SALT",
+  "description": "Art works by 8-bit Acid Lab.\n\nVideo was created by modifying the generative code of Vamoss (vamoss.com.br).",
+  "image": "ipfs://QmNzW1Vn8M4q2WLrJU9tB9kPa8W14HjgJX1Q5EVKuJwMZb/8bit-0002.gif",
+  "animation_url": "ipfs://QmNzW1Vn8M4q2WLrJU9tB9kPa8W14HjgJX1Q5EVKuJwMZb/8bit-0002.mp4",
+  "attributes": [
+    {
+      "trait_type": "Artist",
+      "value": "8-bit Acid Lab"
+    },
+    {
+      "trait_type": "Art",
+      "value": "Not ACID, not BASE, but SALT"
+    },
+    {
+      "trait_type": "Genre",
+      "value": "Acid Techno"
+    }
+  ],
+  "audio_url": "ipfs://QmNzW1Vn8M4q2WLrJU9tB9kPa8W14HjgJX1Q5EVKuJwMZb/8bit-0002.wav",
+  "generative_url": "ipfs://QmX48piDgUoUaxX2NnHjbmEXFLNTvCNDM48JSV5aDEpvVX/"
+}

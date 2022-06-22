@@ -1,12 +1,12 @@
 {
   "name": "I’m Crypto Toy",
-  "description": "Music and Video by 8bit-lab.\n\nVideo was created by arranging Vamoss' (vamoss.com.br) generative code.",
-  "image": "ipfs://QmfR86mWUCfR1yGp2YLM6PmHgN4Lda9SdBss173wj7h2pK/8bit-0001.gif",
-  "animation_url": "ipfs://QmfR86mWUCfR1yGp2YLM6PmHgN4Lda9SdBss173wj7h2pK/8bit-0001.mp4",
+  "description": "Art works by 8-bit Acid Lab.\n\nVideo was created by modifying the generative code of Vamoss (vamoss.com.br).",
+  "image": "ipfs://QmV2KwLvtDKukdYZ3QiX5sFp9TMUMzqBFsSuhS1bUKtwQT/8bit-0001.gif",
+  "animation_url": "ipfs://QmV2KwLvtDKukdYZ3QiX5sFp9TMUMzqBFsSuhS1bUKtwQT/8bit-0001.mp4",
   "attributes": [
     {
       "trait_type": "Artist",
-      "value": "8bit-lab"
+      "value": "8-bit Acid Lab"
     },
     {
       "trait_type": "Art",
@@ -17,6 +17,6 @@
       "value": "Acid Techno"
     }
   ],
-  "audio_url": "ipfs://QmfR86mWUCfR1yGp2YLM6PmHgN4Lda9SdBss173wj7h2pK/8bit-0001.wav",
-  "generative_url": "ipfs://QmPqC6oPTr1LjibhaZ6BVhXd29onh9SenCHX3nagnpsM7r/"
+  "audio_url": "ipfs://QmV2KwLvtDKukdYZ3QiX5sFp9TMUMzqBFsSuhS1bUKtwQT/8bit-0001.wav",
+  "generative_url": "ipfs://QmabfyGk3Gj351GPNtWtrPT4TN9NQj8tXJjE3QoDWUTvkr/"
 }

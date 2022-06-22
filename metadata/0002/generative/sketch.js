@@ -9,10 +9,174 @@ let flashNum = 2;
 let musicStarted = false;
 const rotateSpeed = 0.4;
 
+const messagesArray = [
+  {
+    count: 2,
+    pattern: [
+      'Blockchain',
+      '',
+      'Fuckin',
+      '',
+      'One',
+      '',
+      'Three',
+      'GO!',
+    ],
+  },
+  {
+    count: 2,
+    pattern: [
+      'Blockchain',
+      'Building',
+      'Fuckin',
+      'Blockchain',
+      'One',
+      'Two',
+      'Three',
+      'GO!',
+    ],
+  },
+  {
+    count: 1,
+    pattern: [
+      '',
+      '',
+      '',
+      '',
+      '',
+      'Two',
+      'Three',
+      'GO!',
+    ],
+  },
+  {
+    count: 1,
+    pattern: [
+      '',
+      'Building',
+      '',
+      'Blockchain',
+      '',
+      'Two',
+      'Three',
+      'GO!',
+    ],
+  },
+  {
+    count: 1,
+    pattern: [
+      '',
+      '',
+      '',
+      '',
+      '',
+      'Two',
+      'Three',
+      'GO!',
+    ],
+  },
+  {
+    count: 1,
+    pattern: [
+      '',
+      'Building',
+      '',
+      'Blockchain',
+      '',
+      'Two',
+      'Three',
+      'GO!',
+    ],
+  },
+  {
+    count: 8,
+    pattern: [
+      'Blockchain',
+      'Building',
+      'Fuckin',
+      'Blockchain',
+      'Building',
+      'Blockchain',
+      'Fuckin',
+      'Building',
+      'Building',
+      'Building',
+      'Fuckin',
+      'Blockchain',
+      'Building',
+      'Blockchain',
+      'Fuckin',
+      'GO!',
+    ],
+  },
+  {
+    count: 2,
+    pattern: [
+      'Blockchain',
+      '',
+      'Fuckin',
+      '',
+      'One',
+      '',
+      'Three',
+      'GO!',
+    ],
+  },
+  {
+    count: 2,
+    pattern: [
+      'Blockchain',
+      '',
+      'Fuckin',
+      '',
+      'One',
+      'Two',
+      'Three',
+      'GO!',
+    ],
+  },
+  {
+    count: 12,
+    pattern: [
+      'GO!',
+      'GO!',
+      'GO!',
+      'GO!',
+      'GO!',
+      'GO!',
+      'GO!',
+      'GO!',
+      'GO!',
+      'GO!',
+      'GO!',
+      'GO!',
+      'GO!',
+      'GO!',
+      'GO!',
+      'GO!',
+    ],
+  },
+  // addition
+  {
+    count: 2,
+    pattern: [
+      'Blockchain',
+      '',
+      'Fuckin',
+      '',
+      'One',
+      'Two',
+      'Three',
+      'GO!',
+    ],
+  },
+];
+let messages;
+
 function preload() {
   font = loadFont("PressStart2P-Regular.ttf");
   imgSmile = loadImage('smile.png');
-  song = loadSound("8bit-0001.mp3");
+  song = loadSound("8bit-0002.mp3");
 }
 
 function setup() {
@@ -30,6 +194,14 @@ function setup() {
   textFont(font);
   centerWidth = width / 2;
   centerHeight = height / 2;
+
+  messages = [''].concat(messagesArray.map(messages => {
+    let result = [];
+    for (let i = 0; i < messages.count; i++) {
+      result = result.concat(messages.pattern);
+    }
+    return result;
+  })).flat();
 }
 
 function draw() {
@@ -155,6 +327,7 @@ function draw() {
       push();
       noStroke();
       translate(centerWidth, centerHeight);
+      // rotate(radians(frameCount * rotateSpeed));
       if (song.currentTime() > (3 * 60 + 20)) {
         fill(255);
         textSize(38);
@@ -162,12 +335,8 @@ function draw() {
         text('Encryption', 5, 0);
       } else {
         fill(255);
-        textSize(16);
-        centerText("Hi Everyone", 0, 0 - 65);
-        textSize(20);
-        centerText("I'm Crypto Toy", 0, 0 - 10);
-        textSize(8);
-        centerText("___________________________________", 0, 0 + 20);
+        textSize(38);
+        text(messages[intervalCount % messages.length], 0, 0);
       }
       pop();
     }
@@ -241,4 +410,3 @@ function randomText(c, i) {
     return c;
   }
 }
-
