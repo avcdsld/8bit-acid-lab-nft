@@ -1,0 +1,18 @@
+{
+  "name": "Dream world of a unicorn girl",
+  "description": "Remix and video by 8bit Acid Lab.\n\nOriginal song \"Ballad of Poneh Shalom\" by @ayaLAN.",
+  "image": "ipfs://QmXmZ66TrUBcuxgwGk8vqcwBixSs8ZScE6Tnp4C43LAebv/8bit-0003.gif",
+  "animation_url": "ipfs://QmXmZ66TrUBcuxgwGk8vqcwBixSs8ZScE6Tnp4C43LAebv/8bit-0003.mp4",
+  "attributes": [
+    {
+      "trait_type": "Artist",
+      "value": "8bit Acid Lab"
+    },
+    {
+      "trait_type": "Art",
+      "value": "Dream world of a unicorn girl"
+    }
+  ],
+  "audio_url": "ipfs://QmXmZ66TrUBcuxgwGk8vqcwBixSs8ZScE6Tnp4C43LAebv/8bit-0003.wav",
+  "generative_url": "ipfs://QmVCeaXymjqbFWQKaQhMpdXcgMiaixASxRFck1FPw7JMZi/"
+}
