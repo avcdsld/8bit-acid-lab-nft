@@ -1,1 +1,1 @@
-# 8-bit-crypto-toy
+# 8bit-acid-lab-nft
